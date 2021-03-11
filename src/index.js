@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import firebase from 'firebase';
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAXt-6WIYvzdhB0eehuuQLxPRANMpBVFHo",
+  authDomain: "chat-app-f628c.firebaseapp.com",
+  projectId: "chat-app-f628c",
+  storageBucket: "chat-app-f628c.appspot.com",
+  messagingSenderId: "257942431110",
+  appId: "1:257942431110:web:2974263fda87e19614b807",
+  measurementId: "G-G2JTB35J51"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
